@@ -52,6 +52,7 @@
 
 ## Іще трішки практики
 
+```bash
 # bcrypt — modern password hash, announces itself with the $2b$ prefix
 just run -- '$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQNQy.uK4Of2T7G'   --> коли хеш починається з $, його потрібно обернути в одинарні лапки ( '$2b$...'). Без лапок ваша оболонка спробує розширити його $2як змінну оболонки та розділити хеш на частини. Це властиво оболонкі, а не Python — кожна оболонка Unix робить це.
 
@@ -63,13 +64,15 @@ just run -- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.doz
 
 # Total garbage — the tool will say "no idea" rather than guess
 just run -- helloworld
+```
 
-<img width="766" height="593" alt="Screenshot_2026-07-09_14_58_35" src="https://github.com/user-attachments/assets/bae722ee-2df5-459b-bbf7-3525ad3400e9" />
+<img width="656" height="512" alt="Screenshot_2026-07-09_14_58_35" src="https://github.com/user-attachments/assets/bae722ee-2df5-459b-bbf7-3525ad3400e9" />
 
-<img width="700" height="587" alt="Screenshot_2026-07-09_14_58_40" src="https://github.com/user-attachments/assets/0e88f67f-4f3a-468d-ad56-7209bff576d1" />
+<img width="656" height="512" alt="Screenshot_2026-07-09_14_58_40" src="https://github.com/user-attachments/assets/0e88f67f-4f3a-468d-ad56-7209bff576d1" />
 
-## Макет проєкту
+## Макет даного проєкту
 
+```
 hash-identifier/
 ├── hash_identifier.py        the whole tool — one file, ~680 lines
 ├── test_hash_identifier.py   tests for every behavior the tool claims to have
@@ -84,3 +87,4 @@ hash-identifier/
 │   ├── 03-IMPLEMENTATION.md  line-by-line walkthrough of the code
 │   └── 04-CHALLENGES.md      extension ideas if you want to go further
 └── assets/                   images, screenshots
+```
